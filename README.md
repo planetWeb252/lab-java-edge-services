@@ -36,9 +36,8 @@ Once you finish the assignment, submit a URL link to your repository or your pul
 
   This service will only need the following dependencies:
 
-    - Spring Web
     - Eureka Discovery Client
-    - Gateway
+    - Reactive Gateway
     - Lombok
 
 <br>
