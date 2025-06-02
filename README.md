@@ -7,7 +7,9 @@
 
 ## Descripción
 
-Este laboratorio tiene como objetivo consolidar los conocimientos sobre arquitectura de microservicios usando **Spring Boot**, **Spring Cloud Eureka** y **RestTemplate**. Consiste en desarrollar una aplicación compuesta por varios microservicios que se comunican entre sí para gestionar información de estudiantes, cursos y calificaciones.
+Este laboratorio tiene como objetivo consolidar los conocimientos sobre arquitectura de microservicios usando 
+**Spring Boot**, **Spring Cloud Eureka** y **Feing Clients**. Consiste en desarrollar una aplicación compuesta por 
+varios microservicios que se comunican entre sí para gestionar información de estudiantes, cursos y calificaciones.
 
 ---
 # Enlaces a Github de los micro Servicios
