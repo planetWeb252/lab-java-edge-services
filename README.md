@@ -1,45 +1,63 @@
-![logo_ironhack_blue 7](https://user-images.githubusercontent.com/23629340/40541063-a07a0a8a-601a-11e8-91b5-2f13e4e6b441.png)
 
-# LAB Java | Edge Services
 
-## Introduction
 
-We have just learned how to use OpenFeign for internal communication between services so let's practice a bit more.
 
-<br>
 
-## Requirements
+# LAB Java | Intro to Microservices
 
-1. Fork this repo.
-2. Clone this repo.
-3. Add your instructor and the class graders as collaborators to your repository. If you are unsure who your class graders are, ask your instructor or refer to the day 1 slide deck.
-4. In the repository, create a Java project and add the code for the following prompts.
+## Descripción
 
-## Submission
+Este laboratorio tiene como objetivo consolidar los conocimientos sobre arquitectura de microservicios usando **Spring Boot**, **Spring Cloud Eureka** y **RestTemplate**. Consiste en desarrollar una aplicación compuesta por varios microservicios que se comunican entre sí para gestionar información de estudiantes, cursos y calificaciones.
 
-Once you finish the assignment, submit a URL link to your repository or your pull request in the field below.
+---
+# Enlaces a Github de los micro Servicios
+-[student-catalog-service](https://github.com/planetWeb252/student-catalog-service_labEdge)  
+-[grades-data-service](https://github.com/planetWeb252/grades-data-service_labEdge)  
+-[student-info-service](https://github.com/planetWeb252/student-info-service_labEdge)  
+-[discovery-service](https://github.com/planetWeb252/grades-data-service_labEdge)  
+-[Gateway](https://github.com/planetWeb252/gateway)
 
-<br>
+## 🛠️ Tecnologías utilizadas
+Java 21
 
-## Instructions
+Spring Boot
 
-- Update the code from the previous lab to use OpenFeign instead of Rest Template.
+Spring Cloud Gateway
 
-    ```xml
-    <dependency>
-        <groupId>org.springframework.cloud</groupId>
-        <artifactId>spring-cloud-starter-openfeign</artifactId>
-    </dependency>
-    ```
+Eureka Client
 
-- Create a new service `api-gateway` using [Spring Initializr](https://start.spring.io/) inside of your application that will act as your API gateway and add the needed routing inside of `GatewayConfiguration` file.
+Maven
 
-  This service will only need the following dependencies:
 
-    - Eureka Discovery Client
-    - Reactive Gateway
-    - Lombok
 
-<br>
+## 🧱 Estructura del proyecto
 
-**Note**: In this lab, we will use the code created in the previous lab. If you have not been able to complete it, you may ask your teacher for the solution of the previous lab so you can work with this one.
+### 🔍 discovery-service
+- **Rol**: Servidor Eureka para descubrimiento de servicios.
+- **Tecnología**: Spring Cloud Eureka Server.
+
+### 🎓 student-info-service
+- **Rol**: Gestiona la información básica de los estudiantes.
+
+
+### 📊 grades-data-service
+- **Rol**: Gestiona las notas de los estudiantes por curso.
+  `.
+
+### 📚 student-catalog-service
+- **Rol**: Orquestador. Se comunica con los otros servicios y construye un catálogo de cursos y notas con información detallada del estudiante.
+
+---
+
+## 🚀 Cómo ejecutar
+
+1. Clona los repositorios de cada microservicio.:
+2. Crear una base de datos MySQL para cada microservicio.
+3. Configura el archivo `application.properties` de cada microservicio con los datos de conexión a la base de datos MySQL.
+4. Asegúrate de que el servidor Eureka esté corriendo.
+5. Asegúrate de que cada microservicio esté corriendo.
+6. Usa la collection de Postman para probar los endpoints de cada microservicio.
+
+
+## 👨‍💻 Autor
+-[DevJerryX](https://github.com/planetWeb252)
