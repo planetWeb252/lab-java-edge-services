@@ -3,7 +3,7 @@
 
 
 
-# LAB Java | Intro to Microservices
+# lab-java-edge-services
 
 ## Descripción
 
